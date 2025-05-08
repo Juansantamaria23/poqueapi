@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { AppProvider } from './contexto/contexto';
 
 import Listar from './componentes/listar'
 import Original from './componentes/original'
@@ -12,10 +13,12 @@ import Menu from './componentes/menu';
 function App() {
 
   return (
+    <AppProvider>
     <Router>
 
     <Menu />
-   
+
+    
     <Routes>
 
         <Route path="/" element={<Listar />} />
@@ -26,8 +29,11 @@ function App() {
         <Route path="/detalle/:name" element={<Detalle />} />
 
     </Routes>
+
+    
  
     </Router>
+    </AppProvider>
   )
 }
 
