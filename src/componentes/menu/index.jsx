@@ -8,7 +8,7 @@ function Menu() {
           <Link to="/original">Original</Link>
           <Link to="/capturados">Capturados</Link>
           <Link to="/Aleatorios">Aleatorio</Link>
-          <Link to="/Usuarios">Usuarios</Link>
+          <Link to="/Usuario">Usuario</Link>
           <Link to="/Favoritos">Favoritos</Link>
         </nav>
     )

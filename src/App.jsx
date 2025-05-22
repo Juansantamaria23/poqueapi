@@ -10,7 +10,7 @@ import Aleatorios from './componentes/aleatorios';
 import Lista from './componentes/listar';
 import Capturados from './componentes/Capturados';
 import Favoritos from './componentes/favoritos';
-import Usuarios from './componentes/usuario';
+import Usuario from './componentes/usuario';
 import Detalle from './componentes/detalle';
 import Login from './componentes/login';
 
@@ -44,7 +44,7 @@ return (
 
 />} />
 
-<Route path="/usuario" element={usuario ? <Usuarios /> : <Navigate
+<Route path="/usuario" element={usuario ? <Usuario /> : <Navigate
 
 to="/login" />} />
 
@@ -65,6 +65,7 @@ to="/login" />} />
 <Navigate to="/login" />} />
 
 <Route path="/login" element={<Login/>} />
+<Route path="/registro" element={<Registro/>} />
 </Routes>
 </Router>
 </AppProvider>
